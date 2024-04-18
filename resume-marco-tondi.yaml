@@ -1,0 +1,161 @@
+$schema: "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json"
+meta:
+  version: v1.0.0
+  lastModified: 2024/03/04
+
+label:
+  company: Azienda
+  customer: Cliente
+  role: Ruolo
+  project: Progetto
+  summary: Attività svolta
+  highlights: Tecnologie utilizzate
+
+basics:
+  name: Marco Tondi
+  role: Software Architect
+  email: marco.tondi@exprivia.com
+  mobile: +39 348 304 6207
+  phone: 0832 1975864
+  url: www.exprivia.com
+  github: www.github.com/marcotondi
+  linkedin: www.linkedin.com/in/marcotondi/
+  gender: M
+  birth: 21 ottobre 1987
+  nationality: Italiana
+  location:
+    address: Via per Monteroni
+    postalCode: 73100
+    city: Lecce
+    countryCode: IT
+    region: Italia
+  dateWork: 16 maggio 2018
+
+work:
+  - date: 2022/02 - 2023/06
+    company: Exprivia s.p.a
+    customer: D -- Share / ENI
+    role: Solution Architect
+    summary: >-
+      Migrazione di 2 applicazione WordPress utilizzando i servizi offerti dal cloud AWS. I 2 siti sono configurati in alta affidabilità.
+    highlights: >-
+      \bullet AWS LightSail; \bullet AWS CloudFront; \bullet AWS Load Balancer; \bullet AWS WAF; \bullet CloudWatch; \bullet AWS RDS; \bullet WordPress; \bullet LAMP.
+
+  - date: 2022/02 - alla data attuale
+    company: Exprivia s.p.a
+    customer: CSEA (Cassa per i servizi energetici e ambientali)
+    role: Solution Architect / Tecnical leader
+    summary: >-
+      Refactoring architetturale di sistemi web su tecnologie a container, integrando lo sviluppo con metodologia DevOps utilizzando strumenti di Continuous Integration e Continuous Delivery.\newline{} Gestione del team di sviluppo coordinandone le attività.
+    highlights: >-
+      \bullet Spring / Spring Boot; \bullet JSP; \bullet Apache Tomcat; \bullet Jenkins; \bullet Kubernetes;
+
+  - date: 2021/05 - 2022/02
+    company: Exprivia s.p.a
+    customer: UNICREDIT
+    role: Tecnical leader
+    summary: >-
+      Gestione del team di sviluppo coordinandone le attivià di evolutive per il progetto People Focus HR di UNICREDIT.
+
+  - date: 2020/01 - 2022/02
+    company: Exprivia s.p.a
+    customer: Banca 5
+    role: Tecnical leader
+    summary: >-
+      Refactoring architetturale di sistemi web su tecnologie a container, integrando lo sviluppo con metodologia DevOps utilizzando strumenti di Continuous Integration e Continuous Delivery.\newline{} Gestione del team di sviluppo coordinandone le attività.
+    highlights: >-
+      Gestione del team di sviluppo coordinandone le attività di evolutiva e manutenzione richieste dal cliente Banca 5, istituto di credito facente parte del gruppo Intesa Sanpaolo.
+      Il progetto copre la totalità delle componenti software della Banca ed in particolare:\newline{}
+        \bullet App Mobile Retail native (Android / iOS);
+        \bullet App Mobile Business (ionic);
+        \bullet WebApp Home Banking Retail (Spring Boot, Java 1.8);
+        \bullet WebApp Home Business (Angular);
+        \bullet Sito Istituzionale (Drupal).
+
+  - date: 2019/01 - alla data attuale
+    company: Exprivia s.p.a
+    customer: Enel Energia
+    project: RBM
+    role: Software Developer
+    summary: >-
+      Realizzazione e porting di sistemi web su tecnologie a microservizi Amazon Web Services utilizzando strumenti di Continuous Integration e Continuous Delivery.
+    highlights: >-
+      \bullet AWS Lambda Functions, \bullet AWS DynamoDb, \bullet AWS API Gateway, \bullet AWS Cognito, \bullet Java 8, \bullet Spring Boot, \bullet Spring Batch, \bullet WildFly.
+
+  - date: 2018/05 - 2019/01
+    company: Exprivia s.p.a
+    customer: Aquedotto Pugliese
+    role: Software Developer
+    summary: >-
+      Sviluppo per la realizzazione di un nuovo portale web di ``acquedotto pugliese``: Liferay (6.2.0ga) Portlet, Liferay (6.2.0ga) Service Builder e utilizzo delle Taglib liferay aui per la costruzione di view utente.
+    highlights: >-
+      \bullet Java, \bullet JBoss, \bullet Liferay v6.2, \bullet Bootstrap, \bullet JQuery, \bullet Javascript, \bullet CSS3, \bullet HTML5.
+
+  - date: 2014/12 - 2018/04
+    company: Data Management PA, Brindisi (Italia)
+    project: DM Workplan
+    role: Software Developer
+    summary: >-
+      Sviluppo lato back-end dell'applicazione DM Workplan: software per la gestione dei turni di lavoro. Dotato di un motore di algoritmi avanzati. Copre l'intero processo di gestione dei turni ed è l'unica applicazione in Italia in grado di determinare il dimensionamento ottimale di risorse e profili turni - sulla base dello studio di scenari di business Intelligence - realizzando un sistema di turni individuali in grado di coniugare le esigenze produttive delle aziende e quelle di gestione del tempo dei dipendenti.
+    highlights: >-
+      \bullet JAVA 2 Enterprise Edition (J2EE), \bullet Spring, \bullet Hibernate, \bullet JBoss, \bullet Oracle, \bullet MongoDB, \bullet AngulasJS (front-end).
+
+education:
+  - institution: Università degli Studi di Bari ``Aldo Moro`` (sede Brindisi),\newline{}72100 Brindisi (Brindisi)
+    area: Laurea triennale in Informatica
+    date: 2014-04
+    summary: >-
+      TESI DI LAUREA in Metodi Avanzati di Programmazione \newline{}
+      ``Analisi di traiettorie nella mobilità urbana: Determinazione di percorsi in presenza di vincoli``.\newline{}
+      Relatori: Prof.Donato Malerba, Dott. Corrado Loglisci \newline{}
+      (Data Mining, Path-finding, Intelligenza artificiale, Smart Mobility).
+
+  - institution: I.T.C. ``Adriano Olivetti``,\newline{} 73100 Lecce (Lecce)
+    area: Diploma Istituto Tecnico Commerciale Programmatore
+    date: "2006"
+
+certificates:
+  - name: AWS Certified Solutions Architect - Associate
+    date: "2020/02/20"
+    id: E4G0PFRCHN4EQY3F
+    espired: 18/02/2026
+
+  - name: MongoDB Certified Developer
+    date: "2022/09/21"
+    id: 706-3713-113
+
+skills:
+  - name: Linguaggi di programmazione
+    keywords: - Java - Javascript - Python - C / C++ - BASH
+
+  - name: Framework
+    keywords: - Spring / Spring Boot - NodeJS - Docker - Kubernates - Liferay
+
+  - name: DBMS
+    keywords: - MySQL - MariaDB - PostgreSQL - Oracle - AWS DynamoDB - MongoDB - Redis
+
+  - name: Application Server
+    keywords: - WildFly (JBoss) - Apache Tomcat - WebLogic
+
+  - name: Sistemi Operativi
+    keywords: - GNU / Linux - Windows - MacOS - IBMi
+
+languages:
+  - language: English
+    fluency: Native speaker
+
+personalSkills:
+  - name: Competenze comunicative
+    keywords:
+      - Spirito di gruppo;
+      - Buona capacità di adeguarsi ad ambienti multiculturali;
+      - Buona capacità di comunicazione.
+
+  - name: Competenze organizzative e gestionali
+    keywords: Attualmente gestisco e coordino di un gruppo di 5 persone che lavorano su nuove evolutive richieste dal cliente o eventuali bug fixing.
+
+  - name: Competenze professionali
+    keywords: Progettazione e implementazioni di software - di medie - grandi dimensioni - standalone, client-server, o in ambiente cloud.
+
+  - name: Patente di guida
+    keywords: B

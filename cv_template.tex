@@ -1,0 +1,131 @@
+% !TEX encoding = UTF-8
+% !TEX program = pdflatex
+% !TEX spellcheck = it_IT
+
+% https://github.com/Cybolic/latex-cv-class
+
+\documentclass[italian,a4paper]{europasscv}
+\usepackage[italian]{babel}
+
+\usepackage{resume}
+
+\loadresume{resume-marco-tondi.yaml}
+
+% Contact links from `basics` and `profiles`
+\title{CV \mid\getbypath{basics.name}}
+\author{\getbypath{basics.name}}
+\date{\today}
+
+\ecvname{\getbypath{basics.name}}
+\ecvaddress{\getbypath{basics.location.address}, \getbypath{basics.location.postalCode}, \getbypath{basics.location.city}, \getbypath{basics.location.region}}
+\ecvmobile{\getbypath{basics.mobile}}
+\ecvtelephone{\getbypath{basics.phone}}
+\ecvemail{\getbypath{basics.email}}
+\ecvhomepage{\getbypath{basics.url}}
+\ecvgithubpage{\getbypath{basics.github}}
+\ecvlinkedinpage{\getbypath{basics.linkedin}}
+
+\ecvgender{\getbypath{basics.gender}}
+\ecvdateofbirth{\getbypath{basics.birth}}
+\ecvnationality{\getbypath{basics.nationality}}
+
+\date{}
+
+\begin{document}
+
+\begin{europasscv}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%% PERSONAL INFO
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \ecvpersonalinfo{}
+
+  \ecvitem{}{\ecvhighlight{Lavoro in Exprivia dal:} \getbypath{basics.dateWork}}
+  \ecvbigitem{POSIZIONE ATTUALE}{\getbypath{basics.role}}
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%% ESPERIENZE PROFESSIONALI
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \ecvsection{ESPERIENZA PROFESSIONALE}
+
+  \eachbypath{work}{%
+    \ecvtitle{\get{date}}{}
+    \ecvitem{\getbypath{label.company}}{\get{company}}
+
+    \ifhaspath{work.\i.customer}{
+      \ecvitem{\getbypath{label.customer}}{\get{customer}}
+    }{}
+    \ifhaspath{work.\i.project}{
+      \ecvitem{\getbypath{label.project}}{\get{project}}
+    }{}
+    \ecvitem{\getbypath{label.role}}{\get{role}}
+
+    \ifhaspath{work.\i.summary}{
+      \ecvitem{\getbypath{label.summary}}{\get{summary}}
+    }{}
+    \ifhaspath{work.\i.highlights}{
+      \ecvitem{\getbypath{label.highlights}}{\get{highlights}}
+    }{}
+  }
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%% TITOLI DI STUDIO
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \ecvsection{TITOLI DI STUDIO}
+
+  \eachbypath{education}{%
+    \ecvtitle{\get{date}}{\get{area}}
+    \ecvitem{}{\get{institution}}
+
+    \ifhaspath{work.\i.summary}{
+      \ecvitem{}{\get{summary}}
+    }{}
+  }
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%% CERTIFICAZIONI
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \ecvsection{CERTIFICAZIONI}
+
+  \eachbypath{certificates}{%
+    \ecvtitle{\get{date}}{\get{name}}
+    \ecvitem{ID}{\get{id}}
+
+    \ifhaspath{certificates.\i.espired}{
+      \ecvitem{Scadenza}{\get{espired}}
+    }{}
+  }
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%% COMPETENZE SPECIFICHE
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \ecvsection{COMPETENZE SPECIFICHE}
+
+  \eachbypath{skills}{%
+    \ecvblueitem{\get{name}}{\get{keywords}}
+  }
+
+  % \pagebreak
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%% COMPETENZE PERSONALI
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \ecvsection{COMPETENZE PERSONALI}
+  \ecvmothertongue{Italiano}
+  \ecvlanguageheader{}
+  \ecvlanguage{Inglese}{A2}{B1}{A2}{A2}{B1}
+
+  \ecvlanguagefooter{}
+
+  \eachbypath{personalSkills}{%
+    \ecvblueitem{\get{name}}{\get{keywords}}
+  }
+
+  \ecvblueitem{Trattamento dei dati personali}{Autorizzo il trattamento dei miei dati personali ai sensi del Decreto Legislativo 30 giugno 2003, n. 196 ``Codice in materia di protezione dei dati personali``.}
+
+  \ecvitem{}{}
+  \ecvitem{}{}
+  \ecvitem{}{\ecvhighlight{Data di aggiornamento:} \today}
+
+\end{europasscv}
+
+\end{document}
